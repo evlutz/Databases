@@ -14,6 +14,6 @@ Contains database projects, including relational databases, normalization, Java 
  * The Database was created using Oracle's `SQLDeveloper` and is compatible with other `SQL` clients
 
 ####Entity-Relationship Diagram (ERD)
-<img src="ERD.png" width="504" height="543" class="center">
+<img src="/Hospital%20Information%20System%20(MIS)/ERD.png" width="504" height="543" class="center">
 
 ### Check it out [HERE](https://github.com/evlutz/Databases/tree/main/Hospital%20Information%20System%20(MIS))
