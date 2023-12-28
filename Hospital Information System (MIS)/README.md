@@ -52,7 +52,7 @@ This `Entity-Relationship Database` schema with `Normalization` manages core hos
 1. **Post-Insert Doctor Visit Trigger:** `IsICUPatient` Enforces comment creation on doctor visits to patients with past ICU admissions within the current admission (utilizes JOIN operations and conditional logic).
 2. **On Update Admission Payment Trigger:** `CalculateInsurancePayment` Automatically recalculates insurance payment based on the updated total payment using a pre-defined percentage formula.
 3. **Employee Hierarchy Enforcement Trigger:** `HasCorrectManager` Maintains valid supervisor relationships for regular employees and division managers by enforcing rank constraints upon INSERT and UPDATE operations.
-4. **Emergency Room Future Visit Trigger:** `EMCVisit` Sets the future visit date two months after an Emergency Room admission through an AFTER INSERT trigger utilizing date manipulation functions.
+4. **Emergency Room Future Visit Trigger:** `EMCVisit` Sets the future visit date two months after an Emergency Room admission through an`AFTER INSERT` trigger utilizing date manipulation functions.
 5. **Equipment Inspection Reminder Trigger:** `NewEquipment` Identifies uninspected equipment exceeding a specific time threshold and attempts assigning technicians based on availability through CHECK and UPDATE statements.
 
 #### **JDBC Access with `Reporting.java`:**
