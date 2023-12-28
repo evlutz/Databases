@@ -2,8 +2,9 @@
 
 #### **Description:**
 
-This `relational database` schema with `Normalization` manages core hospital operations through keys representing patients, doctors, admissions, services, and finances. It facilitates efficient data retrieval, analysis, and reporting for informed decision-making. The database includes `views`, `queries`, `trigegrs`, `example data`, `Java Database Connectivity` and `test data`
+This `Entity-Relationship Database` schema with `Normalization` manages core hospital operations through keys representing patients, doctors, admissions, services, and finances. It facilitates efficient data retrieval, analysis, and reporting for informed decision-making. The database includes `views`, `queries`, `trigegrs`, `example data`, `Java Database Connectivity` and `test data`
 
+#### Entity-Relationship Diagram:
 <img src="ERD.png" width="504" height="543" class="center">
 
 
@@ -11,7 +12,7 @@ This `relational database` schema with `Normalization` manages core hospital ope
 
 * **Database Management System:** `Oracle's SQLDeveloper 23.1.1`
 * **API Access:** Java Database Controller `JDBC`
-* **Data Modeling:** Entity-Relatioal `ER` model with `Normalization`
+* **Data Modeling:** Entity-Relationship `ER` model with `Normalization`
 
 #### **Key Features:**
 
@@ -56,10 +57,11 @@ This `relational database` schema with `Normalization` manages core hospital ope
 
 #### **JDBC Access with `Reporting.java`:**
 
-This section should focus on the technical aspects of the program's functionality:
+##### Important Note: **This database utilized a private oracle server in order to utilize this JDBC you must edit the connection to your specific database connection by altering the `connection` variable however all report functions can remain the same**
+
 
 * **Main Invocation and Menu System:** Uses command-line arguments for program execution and displays a menu of reporting and update options upon successful connection.
 * **Patient Information Retrieval:** Upon receiving patient SSN (provided as program argument or user input),utilizes prepared statements and executes a JOIN query to retrieve and display relevant patient details.
 * **Doctor Information Retrieval:** Similar to patient information,** **utilizes prepared statements and JOIN queries to fetch and display doctor details based on the provided ID.
-* **Admission Information Retrieval:** Uses an admission number argument or user input,** **executes complex queries involving multiple tables and JOINs to display admission details,** **including room history,** **doctor involvement (DISTINCT function),** **and calculated insurance amount.
-* **Admission Payment Update:** Prompts for admission number and new total payment, **updates the relevant table rows through prepared statements,** and calculates the revised insurance amount using a function call.
+* **Admission Information Retrieval:** Uses an admission number argument or user input, executes complex queries involving multiple tables and JOINs to display admission details,** including room history, doctor involvement (DISTINCT function), and calculated insurance amount.
+* **Admission Payment Update:** Prompts for admission number and new total payment, updates the relevant table rows through prepared statements, and calculates the revised insurance amount using a function call.
