@@ -4,7 +4,7 @@
 
 This `relational database` schema with `Normalization` manages core hospital operations through keys representing patients, doctors, admissions, services, and finances. It facilitates efficient data retrieval, analysis, and reporting for informed decision-making. The database includes `views`, `queries`, `trigegrs`, `example data`, `Java Database Connectivity` and `test data`
 
-<img src="ERD.png" width="300" height="200">
+<img src="ERD.png" width="504" height="543">
 
 
 #### **Technologies:**
