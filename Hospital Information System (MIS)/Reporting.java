@@ -3,17 +3,6 @@ import java.sql.*;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-/* ++++++++++++++++++++++++++++++++++++++++++++++
-Make sure you did the following before execution
-1) Connect to WPI's wifi or vpn
-2) Create an Oracle data source and successfully create a connection
-3) Write your java code (say file name is OracleTest.java) and then compile it
-using the following command
-> javac OracleTest.java
-4) Run it
-> java OracleTest
-++++++++++++++++++++++++++++++++++++++++++++++ */
-
 
 
 public class Reporting {
@@ -28,7 +17,7 @@ public class Reporting {
         String password = args[1];
 
         // System.out.println("-------- Oracle JDBC Connection Testing ------");
-        // System.out.println("-------- Step 1: Registering Oracle Driver ------");
+        // System.out.println("-------- Registering Oracle Driver ------");
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
         } catch (ClassNotFoundException e) {
@@ -38,7 +27,7 @@ public class Reporting {
             return;
         }
         //System.out.println("Oracle JDBC Driver Registered Successfully !");
-        //System.out.println("-------- Step 2: Building a Connection ------");
+        //System.out.println("-------- Building a Connection ------");
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(
@@ -51,7 +40,7 @@ public class Reporting {
             return;
         }
         if (connection != null) {
-            //System.out.println("You made it. Connection is successful. Take control of your database now!");
+            //System.out.println("You made it. Connection is successful");
         } else {
             System.out.println("Failed to make connection!");
         }
@@ -192,5 +181,3 @@ public class Reporting {
         connection.close();
     }
 }
-
-//        java -cp /Users/johndiamond/Downloads/ojdbc8.jar:. Reporting jydiamond JYDIAMOND
