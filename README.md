@@ -8,8 +8,8 @@ Contains database projects, including relational databases, normalization, Java 
 
  * Manages information essential hospital information from employees to financials in a `Normalized Entity-Relationship Database`.
  * Employs `views`, `queries`, and `triggers` to streamline data access, prevent redundancy, and highlight critical information.
- * Flexible data retrieval: Facilitates information extraction through a customizable `JDBC` interface.
- * Broad compatibility: Developed in `Oracle SQLDeveloper` but accessible using various SQL clients.
+ * Facilitates information extraction through a customizable `Java Database Connectivity (JDBC)` interface.
+ * Developed in `Oracle SQLDeveloper` but accessible using various SQL clients.
 
 ### Entity-Relationship Diagram (ERD)
 
