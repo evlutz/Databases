@@ -6,8 +6,8 @@ Contains database projects, including relational databases, normalization, Java 
 ## [Hospital Information System](https://github.com/evlutz/Databases/tree/main/Hospital%20Information%20System%20(MIS))
 
 
- * Organizes comprehensive data: Manages information about managers, employees, patients, visits, equipment, rooms, services, and financials using a `normalized ERDB`.
- * Optimized for efficiency and integrity: Employs `views`, `queries`, and `triggers` to streamline data access, prevent redundancy, and highlight critical information (e.g., high-risk patients).
+ * Manages information essential hospital information from employees to financials in a `Normalized Entity-Relationship Database`.
+ * Employs `views`, `queries`, and `triggers` to streamline data access, prevent redundancy, and highlight critical information.
  * Flexible data retrieval: Facilitates information extraction through a customizable `JDBC` interface.
  * Broad compatibility: Developed in `Oracle SQLDeveloper` but accessible using various SQL clients.
 
